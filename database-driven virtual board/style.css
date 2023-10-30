@@ -2,7 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: Arial, sans-serif;
+  /* font-family: "Poppins", sans-serif; */
 }
 
 :root {
@@ -304,4 +305,45 @@ body.dark .switch::before {
 }
 body.dark .home .text {
   color: var(--text-color);
+}
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 80px;
+  padding: 20px;
+  background-color: var(--body-color);
+  border: 3px solid #ccc;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+}
+.uploadtilte{
+  align-items: center;
+  margin-left: 60px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+input, select, textarea {
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+input[type="submit"] {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: #0056b3;
 }
